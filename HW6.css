@@ -1,0 +1,47 @@
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  nav {
+    background-color: rgb(161, 228, 133);
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+
+  #form1, #DisplayScreen {
+    padding: 20px;
+  }
+
+  input:valid {
+    border: 2px solid green;
+  }
+  
+  input:invalid {
+    border: 2px solid red;
+  }

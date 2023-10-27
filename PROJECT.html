@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS3023-Project</title>
+</head>
+<!-- Aysu Dalogullari, CIS3023-PROJECT, APRIL 23 2023 -->
+<body>
+    <link rel="stylesheet" type="text/css" href="PROJECT.css">
+    <h1>Inventory Management System</h1>
+    <div id="inventory">
+      <h2>Inventory</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item #</th>
+            <th>Item Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Vendor</th>
+            <th>Min. Order Qty</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-list">
+        </tbody>
+      </table>
+    </div>
+    <div id="user-actions">
+      <h2>User Actions</h2>
+      <form id="remove-item-form">
+        <label for="item-number">Item Number:</label>
+        <input type="text" id="item-number" required>
+        <label for="item-quantity">Quantity:</label>
+        <input type="number" id="item-quantity" required>
+        <button type="submit">Remove Item</button>
+      </form>
+    </div>
+    
+      <div id="inventory-quantity">
+        <table>
+          <tr>
+            <td>Total Items:</td>
+            <td><span id="total-items"></span></td>
+          </tr>
+        </table>
+      </div>
+      <button id="adminButton">Admin</button>
+
+      <div id="adminPanel" style="display:none;">
+        <h2>Add New Item</h2>
+        <label for="itemNumber">Item Number:</label>
+        <input type="text" id="itemNumber"><br>
+    
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName"><br>
+    
+        <label for="itemQuantity">Item Quantity:</label>
+        <input type="number" id="itemQuantity"><br>
+    
+        <label for="itemPrice">Item Price:</label>
+        <input type="number" id="itemPrice"><br>
+        <label for="itemVendor">Item Vendor:</label>
+        <input type="text" id="itemVendor"><br>
+
+        <label for="itemDescription">Description:</label>
+        <input type="text" id="itemDescription">
+        <label for="itemInventoryStatus">Item Inventory Status:</label>
+        <input type="text" id="itemInventoryStatus"><br>
+      
+        <button id="addItemButton">Add Item</button>
+        <hr>
+    
+        <h2>Delete Existing Item</h2>
+        <label for="itemToDelete">Item to Delete:</label>
+        <input type="text" id="itemToDelete"><br>
+    
+        <button id="deleteItemButton">Delete Item</button>
+    
+        <hr>
+    
+        <h2>Reorder Item</h2>
+        <label for="itemToReorder">Item to Reorder:</label>
+        <input type="text" id="itemToReorder"><br>
+    
+        <label for="reorderQuantity">Reorder Quantity:</label>
+        <input type="number" id="reorderQuantity"><br>
+    
+        <button id="reorderItemButton">Reorder Item</button>
+      </div>
+      <script src="ADalogullari-CIS3023Project.js"> </script>
+    </body>
+  </html>
+  
