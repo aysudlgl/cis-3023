@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADalogullari-Final Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ADalogullari-Final.js"></script>
+</head>
+<!--Aysu Dalogullari, CIS-3023, MAY 3 2023, FINAL EXAM -->
+<header>
+    
+<h1>Windmill Farm Power Calculator</h1>
+
+<p>Enter the following data for individual windmill power and total farm power output</p>
+
+</header>
+
+<body>
+    <div id="div1" class="content">
+        <form id="windmill" onsubmit="windmills(); return false;">
+            <h2>Add Windmill Information Here</h2>
+          <label for="windmillID">Windmill ID:</label>
+          <input type="text" id="windmillID" name="windmillID" required ><br>
+
+          <label for="turbine">Turbine Diameter(m):</label>
+          <input type="number" id="turbine" name="turbine" min="0" step = ".01" required ><br>
+
+          <label for="velocity">Wind Velocity(m/s):</label>
+          <input type="number" id="velocity" name="velocity" min="0" step = ".01" required autofocus><br>
+
+          <label for="density">Air Density(kg/m^):</label>
+          <input type="number" value="1.225"    id="density" name="density" min="0" step = ".001" required><br>
+
+          
+
+        </form>
+      </div>
+
+      <div id="div2">
+        Display Area
+
+        <button type="button" onclick="displayPower()" class="Calculate-Power"> Windmill Power :</button><br>
+
+        <button type="button" onclick="calcTOTAL()" class="total" name="total" id="total">Total Farm Power</button><br>
+    </div>
+
+</body>
+
+</html>

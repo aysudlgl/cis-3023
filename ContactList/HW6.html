@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6</title>
+    <link rel="stylesheet" type="text/css" href="HW6.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="HW6.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Contact List</h1>
+    <p>Enter your contacts and view them sorted below</p>
+    </header>
+    <nav>
+     <button id="ShowDisplayScreen">Display Screen</button> 
+     <button id="ShowFormScreen">Form Screen</button> 
+    </nav>
+
+        <form id="form1">
+
+        <h2>Add New Contacts Here</h2>
+
+        <label for="fistname">First Name: </label>
+        
+        <input type="firstname" id="firstname" name="firstname"  required autofocus><br><br>
+        
+        <label for="lastname">Last Name: </label>
+        <input type="lastname" id="lastname" name="lastname"  required ><br><br>
+
+        <label for="streetaddress">Street Address: </label>
+        <input type="streetaddress" id="streetaddress" name="streetaddress" ><br><br>
+
+        <label for="City">City:</label>
+        <input type="City" id="City" name="City" ><br><br>
+
+        <label for="State">State: </label>
+        <input type="text" id="State" name="State" maxlength="2"><br><br>
+
+        <label for="zipcode">Zip Code : </label>
+        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}"><br><br>
+        
+        <label for="phone">Telephone number:
+            Use this Pattern:[0-9]{3}-[0-9]{3}-[0-9]{4}
+        </label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required autofocus><br><br>
+        <div>
+        <input type="button" id="submit" value="Submit">
+        </div>
+        </form> 
+        <div id="DisplayScreen">
+        <h2>Contacts</h2>
+        <ul id="contactList"></ul>
+        </div>
+
+</body>
+</html>
